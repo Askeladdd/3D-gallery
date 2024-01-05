@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+  
+
+  <title>CodePen - Pure CSS 3D Rotating Image Gallery Using HTML &amp;  Advance CSS</title>
+
+    <link rel="canonical" href="https://codepen.io/Bilal1909/pen/KKVRbeQ">
+  
+  
+  
+  
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ckrCzRbA929jSMh9UU-AQpDYiUXCtJnQwkAnYNlhDMYtvxLkA8hRnNjh1eQ3sYHB6ofOAVHuvRSCorJKw-uRVdcS3uM-jd2KmUKa29FBwW15zYWFG9sOGtqrtQM8a69B" charset="UTF-8"></script><style>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  overflow: hidden;
+}
+.scope {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transform-style: preserve-3d;
+  animation: slid 20s linear infinite;
+}
+
+.scope span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+.scope span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+.scope span:hover img {
+  transform: translateY(-50px) scale(1.3);
+}
+@keyframes slid {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <div class="scope">
+  <span style="--i:1;"><img src="https://ips.gpk.gov.by/local/templates/institut/img/ips.png" alt="not found"></span>
+  <span style="--i:2;"><img src="https://www.bgaa.by/themes/bootstrap_sass/images/svg.svg" alt="not found"></span>
+  <span style="--i:3;"><img src="https://bntu.by/voentour.bntu.by/images/image_1.png" alt="not found"></span>
+  <span style="--i:4;"><img src="https://patriot.voiro.by/files/00118/obj/110/14223/img/Logo_GSU__1_-removebg-preview%20(1).png" alt="not found"></span>
+ <span style="--i:5;"><img src="https://patriot.voiro.by/files/00118/obj/110/14223/img/%D0%B0%D0%B2%D0%B8%D0%B0%D1%86%D0%B8%D1%8F__1_-removebg-preview.png" alt="not found"></span>
+  <span style="--i:6;"><img src="https://patriot.voiro.by/files/00118/obj/110/14223/img/%D0%A8%D0%B5%D0%B2%D1%80%D0%BE%D0%BD_%D0%92%D0%A4_%D0%91%D0%93%D0%A3%D0%98%D0%A0__1_-removebg-preview.png" alt="not found"></span>
+  <span style="--i:7;"><img src="https://patriot.voiro.by/files/00118/obj/110/14223/img/%D0%91%D0%B5%D0%BB%D0%93%D0%A3%D0%A2__1_-removebg-preview%20(1).png" alt="not found"></span>
+  <span style="--i:8;"><img src="https://patriot.voiro.by/files/00118/obj/110/14223/img/83d11d8f661660a7c8b8db244eca7c60-removebg-preview%20(1).png" alt="not found"></span> 
+</div>
+  
+  
+  
+</body>
+
+</html>
